@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on Hover */
+::-webkit-scrollbar-track:hover{
+  background: #555;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  min-height: 85vh;
+}
+
+.contentRoutes {
+  min-height: 80%;
+}
+
+.authPage {
+  height: 95%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: '/';
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: #ddd;
+}
+
+
+.textareaNotes{
+  border: none;
+  resize: none;
+  background: none;
+  cursor:default;
+  font-family: 'Source Code Pro', sans-serif;;
+}
+
+
+.textareaNotes:focus{
+  outline: none;
+  cursor: default;
+}
+
+::placeholder{
+  color: azure;
+}
+
+:focus::placeholder{
+  color: transparent;
+}
+
+.delete-icon{
+  cursor: pointer;
+}
+
+.trPerfil{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+
+}
+
+.trGeralPerfil{
+  margin-left: 0px;
+}
+
+.tablePerfil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tdPerfilMed{
+  margin-left:20px ;
+  font-size: 14px;
+
+}
