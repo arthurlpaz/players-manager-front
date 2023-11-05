@@ -198,17 +198,17 @@ const Sidebar = () => {
                         )}
 
                         <Item
-                            title="Registrar Paciente"
+                            title="Registrar Jogador"
                             Link
-                            to="/registrar-paciente"
+                            to="/registrar-jogador"
                             icon={<PeopleOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                             isCollapsed={isCollapsed}
                         />
                         <Item
-                            title="Monitorar Lesão"
-                            to="/monitorar-lesao"
+                            title="Visualizar Jogadores"
+                            to="/visualizar-jogadores"
                             icon={<ContactsOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
