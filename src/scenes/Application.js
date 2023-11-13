@@ -6,6 +6,8 @@ import Sidebar from "./global/Sidebar";
 import Topbar from "./global/Topbar";
 import Footer from "./global/Footer";
 import Home from "./home";
+import Perfil from "./perfil/index"
+import Register from "./register/index";
 
 const Application = () => {
     const [theme, colorMode] = useMode();
@@ -21,6 +23,8 @@ const Application = () => {
                         <div>
                             <Routes>
                                 <Route path="/Home" element={<Home />} />
+                                <Route path="/perfil" element={<Perfil />} />
+                                <Route path="/registrar-jogador" element={<Register />}/>
                             </Routes>
                         </div>
                         <Footer />

@@ -6,12 +6,10 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import {PersonOutline} from "@mui/icons-material";
 //import EditIcon from "@mui/icons-material/Edit";
 import {IconButton, useTheme} from "@mui/material";
-import {tokens} from "../../theme";
 import {useNavigate} from "react-router-dom";
 import {authLogout} from "../../services/service.auth";
 
 function MenuUser() {
-    const theme = useTheme();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
 
