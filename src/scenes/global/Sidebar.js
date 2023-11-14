@@ -207,8 +207,8 @@ const Sidebar = () => {
                             isCollapsed={isCollapsed}
                         />
                         <Item
-                            title="Visualizar Jogadores"
-                            to="/visualizar-jogadores"
+                            title="Visualizar Partidas"
+                            to="/visualizar-partidas"
                             icon={<ContactsOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
